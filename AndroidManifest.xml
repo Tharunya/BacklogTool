@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cgit.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".WelcomeActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cgit.main.AddProjectDetailsActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.ChangePasswordActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.EmailActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.HomeActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.LoginActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.ProjectsActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.ResourcesActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.SignUpBacklogActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.SprintActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.AddSprintDetailsActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.TaskActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.AddTaskDetailsActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.cgit.main.ViewTaskDetailsActivity" android:theme="@android:style/Theme.NoTitleBar" />
+        
+    </application>
+
+</manifest>

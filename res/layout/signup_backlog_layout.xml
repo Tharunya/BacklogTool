@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/l_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/f_name"
+        android:layout_below="@+id/enter_fname"
+        android:layout_marginTop="25dp"
+        android:text="@string/l_name_text"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/enter_lname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/l_name"
+        android:layout_alignBottom="@+id/l_name"
+        android:layout_alignLeft="@+id/enter_fname"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:width="200dp" />
+
+    <EditText
+        android:id="@+id/enter_pwd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pwd"
+        android:layout_alignBottom="@+id/pwd"
+        android:layout_alignLeft="@+id/enter_lname"
+        android:ems="10"
+        android:fontFamily="consolas"
+        android:hint="@string/choose_pwd_hint"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/email_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pwd"
+        android:layout_below="@+id/enter_confirm_pwd"
+        android:layout_marginTop="25dp"
+        android:text="@string/email_id_text"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/enter_email_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email_id"
+        android:layout_alignBottom="@+id/email_id"
+        android:layout_alignLeft="@+id/enter_confirm_pwd"
+        android:ems="10"
+        android:fontFamily="consolas"
+        android:hint="@string/email_format_hint"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/confirm_pwd"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pwd"
+        android:layout_below="@+id/enter_pwd"
+        android:layout_marginTop="25dp"
+        android:lines="2"
+        android:text="@string/confirm_pwd_text"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/enter_confirm_pwd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/confirm_pwd"
+        android:layout_alignBottom="@+id/confirm_pwd"
+        android:layout_toRightOf="@+id/l_name"
+        android:ems="10"
+        android:fontFamily="consolas"
+        android:hint="@string/confirm_pwd_hint"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:width="200dp" />
+
+    <EditText
+        android:id="@+id/enter_fname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/f_name"
+        android:layout_alignBottom="@+id/f_name"
+        android:layout_alignLeft="@+id/enter_confirm_pwd"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:width="200dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enter_fname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="-50dp"
+        android:text="@string/register_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submit"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_alignLeft="@+id/enter_email_id"
+        android:layout_marginLeft="52dp"
+        android:background="@drawable/button_background"
+        android:onClick="signUpCancel"
+        android:text="@string/cancel_text"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/confirm_pwd"
+        android:layout_below="@+id/enter_email_id"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/button_background"
+        android:onClick="signUpSubmit"
+        android:text="@string/submit_text"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/f_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_toLeftOf="@+id/register"
+        android:text="@string/f_name_text"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/f_name"
+        android:layout_below="@+id/enter_uname"
+        android:layout_marginTop="25dp"
+        android:text="@string/pwd_text"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/l_name"
+        android:layout_below="@+id/enter_lname"
+        android:layout_marginTop="25dp"
+        android:text="@string/uname_text"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/enter_uname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uname"
+        android:layout_alignBottom="@+id/uname"
+        android:layout_alignLeft="@+id/enter_pwd"
+        android:ems="10"
+        android:fontFamily="consolas"
+        android:hint="@string/choose_uname_hint"
+        android:inputType="text"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:width="200dp" />
+
+</RelativeLayout>

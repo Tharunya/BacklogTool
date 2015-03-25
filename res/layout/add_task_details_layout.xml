@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:stretchColumns="*" >
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task :"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/enter_task"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:inputType="text|textMultiLine" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priority :"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/enter_task_priority"
+                android:layout_width="fill_parent"
+                android:ems="10"
+                android:singleLine="true" >
+            </EditText>
+        </TableRow>
+
+         <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/resource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resource :"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/enter_resource"
+                android:layout_width="fill_parent"
+                android:ems="10"
+                android:singleLine="true" />
+        </TableRow>
+
+          <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/acceptance_criteria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="Acceptance Criteria :"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+          <TableRow>
+
+            <EditText
+                android:id="@+id/enter_acceptance_criteria"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_span="2"
+                android:ems="10"
+                android:inputType="text|textMultiLine" />
+        </TableRow>
+
+          <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/estimated_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimated Hours :"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/enter_estimated_hours"
+                android:layout_width="fill_parent"
+                android:ems="10"
+                android:singleLine="true" >
+            </EditText>
+        </TableRow>
+
+          <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"                
+                android:text="Comments :"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+          <TableRow>
+            <EditText
+                android:id="@+id/enter_comments"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_span="2"
+                android:ems="10"
+                android:inputType="text|textMultiLine" />
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_background"
+                android:onClick="cancelTask"
+                android:text="@string/cancel_text"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/create"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:onClick="createTask"
+                android:text="@string/create_text"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            </TableRow>
+    </TableLayout>
+
+</LinearLayout>

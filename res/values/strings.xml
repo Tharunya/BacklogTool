@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BacklogTool</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Text -->
+    <string name="login_heading_text">Login</string>
+    <string name="uname_text">Username :</string>
+    <string name="pwd_text">Password :</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="attempts_count_text"></string>
+    <string name="attempts_text">Attempts Left :</string>
+    <string name="register_text">Register</string>
+    <string name="confirm_pwd_text">Confirm Password :</string>
+    <string name="email_id_text">Email ID :</string>
+    <string name="submit_text">Submit</string>
+    <string name="f_name_text">First Name :</string>
+    <string name="l_name_text">Last Name :</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="project_name_text">Project Name :</string>
+    <string name="start_date_text">Start Date :</string>
+    <string name="end_date_text">End Date :</string>
+    <string name="add_project_text">Add Project</string>
+    <string name="select_resources_text">Select Resources :</string>
+    <string name="create_text">Create</string>
+    <string name="add_more_resources_text">Add More Resources</string>
+    <string name="add_resource_text">Add Resource</string>
+    <string name="description_text">Description :</string>
+    <string name="sprint_duration_text">Sprint Duration :</string>
+    <string name="task_text">Task :</string>
+    <string name="comments_text">Comments :</string>
+    <string name="add_sprint_text">Add Sprint</string>
+    <string name="add_task_text">Add Task</string>
+    <string name="launchmsg">BacklogTool Launcher</string>
+    <string name="email">Email</string>
+    <string name="projects">Projects</string>
+    <string name="change_password">Change Password</string>
+    <string name="resources">Resources</string>
+    <string name="change_pwd">Change Password</string>
+    <string name="home_heading">Home</string>
+    <string name="create_project">Add Project</string>
+    <string name="status_text">Status : </string>
+    <string name="resource_text">Resource : </string>
+    <string name="acceptance_criteria_text">Acceptance Criteria :</string>
+    <string name="estimated_hours_text">Estimated Hours :</string>
+    <string name="actual_hours_text">Actual Hours :</string>
+    <string name="remaining_hours_text">Remaining Hours :</string>
+    <string name="priority_text">Priority :</string>
+
+    <!-- Hint -->
+    <string name="choose_uname_hint">Choose UserName</string>
+    <string name="email_format_hint">abc@gmail.com</string>
+    <string name="choose_pwd_hint">Choose Password</string>
+    <string name="enter_uname_hint">Enter Username</string>
+    <string name="enter_pwd_hint">Enter Password</string>
+    <string name="confirm_pwd_hint">Confirm Password</string>
+    <string name="enter_resource_name_hint">Resource Name</string>
+
+</resources>
